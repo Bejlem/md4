@@ -1,0 +1,201 @@
+/*
+ * Created by jub on 23.12.2017.
+/*----------------------------------------------------------------
+        General Styling
+----------------------------------------------------------------*/
+html {
+    --header-nav-width:    14ch;
+    --header-button-width: 2ch;
+    --header-title-width:  12ch;
+
+    --spacing:          .25em;
+    --default-margin:   14px;
+    --default-padding:  16px;
+    --font-size-normal: 1.08em;
+    --font-size-normal: 16px;
+    --font-size-big:    2em;
+    --font-size-header: 3em;
+    --label-width:      160px;
+
+
+    --color-black12:    #121212;
+    --color-black1c:    #1c1c1c;
+    --color-black21:    #212121;
+    --color-black2d:    #2d2d2d;
+    --color-black33:    #333333;
+    --color-black3e:    #3e3e3e;
+    --color-black77:    #777777;
+
+    --color-child01:    #F38181;
+    --color-child02:    #9DD3CC;
+    --color-child03:    #D0F9B1;
+    --color-child04:    #FFBBE1;
+    --color-child05:    #FFA06F;
+    --color-child06:    #DBDBEB;
+    --color-child07:    #60C7EC;
+    --color-child08:    #0060CA;
+    --color-child09:    #FFECBA;
+    --color-child10:    #FFCAE4;
+    --color-child11:    #B793E6;
+    --color-child12:    #F4E7D3;
+    --color-child13:    #c5f0a4;
+
+    --color-bg1:        #232931;
+    --color-bg2:        #171819;
+    --color-main1:      #282A36;
+    --color-main2:      #484B61;
+    --color-text:       #8787A3;
+    --color-white:      #fff;
+    --color-red:        #FF5F5D;
+    --color-yellow:     #FFDE85;
+    --color-lightblue:  #98FFE1;
+    --color-blue:       #57c7ff;
+
+    --color-shadow1:     rgba(0,0,0,.1);
+    --color-shadow25:    rgba(0,0,0,.25);
+    --color-shadow3:     rgba(0,0,0,.3);
+    --color-shadow35:    rgba(0,0,0,.35);
+    --color-shadow5:     rgba(0,0,0,.5);
+    --color-shadow6:     rgba(0,0,0,.6);
+    --color-shadow75:    rgba(0,0,0,.75);
+    --color-text-shadow: rgba(242,242,249,.25);
+
+    --hight-searchBox: 64px;
+    --width-label:    10ch;
+    --width-category: 40ch;
+    --padding-category: 10px;
+    --margin-category:  5px;
+
+    min-height: 100%;
+    background: var(--color-bg2);
+    font-family: 'Varela Round', sans-serif;
+    font-size: var(--font-size-normal);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height:100%;
+    background: linear-gradient(var(--color-bg1),var(--color-bg2));
+    background: var(--color-bg2);
+    background-repeat:no-repeat !important;
+    color: #bbb;
+    margin: 0 0 0;
+}
+
+.spacer_top {
+    height: 150px;
+}
+
+/*----------------------------------------------------------------
+        Rules
+----------------------------------------------------------------*/
+/* Width of Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(var(--color-bg1), var(--color-bg2));
+    -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-main1);
+    background: rgba(90,92,104,.6);
+    -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(60,62,74,.8);
+}
+
+/*----------------------------------------------------------------
+        Page Styling
+----------------------------------------------------------------*/
+header {
+    position: relative;
+    color: var(--color-black33);
+    background: var(--color-main1);
+    max-width: 120ch;
+    max-width: calc(120ch + 10px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: var(--padding-category);
+    border: 2px solid  var(--color-shadow1);
+    box-shadow: 0 0px 20px 0px var(--color-shadow5);
+    transition: box-shadow 500ms ease;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header:before {
+    border: 2px solid var(--color-shadow25);
+    box-shadow: 0 0px 8px 0px var(--color-shadow35);
+}
+
+header:hover {
+    box-shadow: 0 0 25px 0px var(--color-shadow5);
+    transition: box-shadow 500ms ease;
+}
+
+
+#searchBoxPreText {
+    position: absolute;
+    display: inline;
+    /*margin: 19px 20px;
+    /*margin: calc(var(--hight-searchBox) / calc(var(--font-size-normal) / 3.5)) 20px;*/
+    padding-bottom: 0;
+}
+
+#searchInput {
+    display: inline;
+    /*background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10ch" height="30"><text x="5" y="19" style="font: bold 16px Varela Round;">~ > locate</text></svg>') no-repeat;*/
+    background: transparent;
+    color: var(--color-text);
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    height: var(--hight-searchBox);
+    height: auto;
+    width: 100%;
+    margin-top: 2px;
+    padding-left: 8ch;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+#content {
+    position: relative;
+    color: white;
+    background: transparent;
+    max-width: calc(120ch + 32px);
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*----------------------------------------------------------------
+        Color Styling
+----------------------------------------------------------------*/
+.blue {
+    color: var(--color-blue);
+}
+
+.green {
+    color: #5af78e;
+}
+
+.pink {
+    color: #ff6ac1;
+}
