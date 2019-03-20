@@ -1,0 +1,53 @@
+/*
+ * Created by jub on 20.03.2019.
+/*----------------------------------------------------------------
+        Category List Styling
+----------------------------------------------------------------*/
+.cat_01 {
+    background: var(--color-main1);
+    max-width: calc(40ch - (2 * var(--padding-category)));
+    height: auto;
+    padding: var(--padding-category);
+    border: 2px solid  var(--color-shadow1);
+    box-shadow: 0 0px 20px 0px var(--color-shadow5);
+    transition: box-shadow 500ms ease;
+}
+
+.cat_01:not(:first-child) {
+    margin-top: 10px;
+}
+
+.cat_01:before {
+    border: 2px solid var(--color-shadow25);
+    box-shadow: 0 0px 8px 0px var(--color-shadow35);
+}
+
+.cat_01:hover {
+    box-shadow: 0 0 25px 0px var(--color-shadow5);
+    transition: box-shadow 500ms ease;
+}
+
+.cat_02 {
+    float: right;
+    background: var(--color-main1);
+    max-width: calc(120ch + 10px);
+    height: auto;
+    margin-top: 10px;
+    padding: var(--padding-category);
+    border: 2px solid  var(--color-shadow1);
+    box-shadow: 0 0px 20px 0px var(--color-shadow5);
+    transition: box-shadow 500ms ease;
+}
+
+.cat_group{
+    float: left;
+    margin: var(--margin-category);
+}
+
+.cat_group:first-child {
+    margin-left: 0;
+}
+
+.cat_group:last-child {
+    margin-right: 0;
+}
