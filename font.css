@@ -1,0 +1,25 @@
+a {
+    color: var(--color-text);
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    padding: 0px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 200ms, text-shadow 250ms;
+}
+
+a:hover {
+    color:inherit;
+    /*text-shadow: 0 0 8px var(--color-text-shadow);*/
+    /*text-shadow: 0 0 8px;*/
+    color: var(--color-blue);
+    transition: color 150ms, text-shadow 200ms;
+}
+
+a:first-child {
+    margin-left: 0;
+}
+
+.font_bold {
+    font-weight: bold;
+}
