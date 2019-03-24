@@ -1,25 +1,37 @@
 a {
-    color: var(--color-text);
-    /*margin-left: 20px;
-    margin-right: 20px;*/
-    padding: 0px 10px;
+    color: var(--color-text-link);
+    padding: 0 10px;
     text-decoration: none;
     white-space: nowrap;
-    transition: color 200ms, text-shadow 250ms;
+    transition: color 400ms;
 }
 
 a:hover {
     color:inherit;
-    /*text-shadow: 0 0 8px var(--color-text-shadow);*/
-    /*text-shadow: 0 0 8px;*/
-    color: var(--color-blue);
-    transition: color 150ms, text-shadow 200ms;
+    transition: color 150ms;
 }
 
-a:first-child {
-    margin-left: 0;
+a:before {
+    color: var(--color-text-link);
+    transition: color 0ms;
 }
 
 .font_bold {
     font-weight: bold;
 }
+
+.font_pre01 {
+    color: var(--color-text-pre01);
+}
+
+.font_pre02 {
+    color: var(--color-text-pre02);
+}
+
+.font_pre03 {
+    color: var(--color-text-pre03);
+}
+
+
+
+
