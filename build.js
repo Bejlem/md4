@@ -40,6 +40,7 @@ let categoryLinks = [
         ['http://crea-turestudios.com/', 'session'],
         ['https://bungie.net', 'destiny2'],
         ['https://battlerite.com', 'battlerite'],
+        ['https://mtgdecks.net//Standard', 'mtg a'],
         ['https://docs.google.com/spreadsheets/d/11yn0crhwmH9zs9sTb6vZyyjxF1sJXWyVeTY49c2lfSM/edit#gid=1575270165', 'rl pi'],
         ['https://humblebundle.com', 'humble bundle'],
         ['https://store.steampowered.com/', 'steam'],
