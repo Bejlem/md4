@@ -26,8 +26,9 @@
 }
 
 .cat_01:hover, .cat_02:hover {
-    box-shadow: 0 0 25px 0 var(--color-shadow5);
-    transition: box-shadow 500ms ease;
+    border-top: 2px solid var(--color-selection);
+    box-shadow: 0 0 25px 0 var(--color-shadow75);
+    transition: border 500ms ease, box-shadow 500ms ease;
 }
 
 .cat_group{
@@ -44,8 +45,8 @@
 }
 
 .cat_select {
-    border: 2px solid var(--color-child01);
-    transition: box-shadow 500ms ease;
+    border: 2px solid var(--color-selection);
+    transition: border 500ms ease;
 }
 
 .catPreText {
