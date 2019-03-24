@@ -11,11 +11,6 @@ a:hover {
     transition: color 150ms;
 }
 
-a:before {
-    color: var(--color-text-link);
-    transition: color 0ms;
-}
-
 .font_bold {
     font-weight: bold;
 }
@@ -32,6 +27,6 @@ a:before {
     color: var(--color-text-pre03);
 }
 
-
-
-
+.links {
+    user-select: none;
+}
