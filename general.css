@@ -6,6 +6,7 @@
 html {
     --color-bg:             #171819;
     --color-main:           #262830;
+    --color-sb-inactive:    #212328;
     --color-selection:      #ffecba;
 
     --color-text-link:      #8a8ea3;
@@ -50,22 +51,15 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
     background: var(--color-bg);
-    -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
-    -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
-    box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--color-main);
-    background: rgba(90,92,104,.6);
-    -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
-    -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
-    box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(60,62,74,.8);
+    background: var(--color-sb-inactive);
 }
 
 /*----------------------------------------------------------------
