@@ -4,28 +4,6 @@
         General Styling
 ----------------------------------------------------------------*/
 html {
-    --color-black12:    #121212;
-    --color-black1c:    #1c1c1c;
-    --color-black21:    #212121;
-    --color-black2d:    #2d2d2d;
-    --color-black33:    #333333;
-    --color-black3e:    #3e3e3e;
-    --color-black77:    #777777;
-
-    --color-child01:    #F38181;
-    --color-child02:    #9DD3CC;
-    --color-child03:    #D0F9B1;
-    --color-child04:    #FFBBE1;
-    --color-child05:    #FFA06F;
-    --color-child06:    #DBDBEB;
-    --color-child07:    #60C7EC;
-    --color-child08:    #0060CA;
-    --color-child09:    #FFECBA;
-    --color-child10:    #FFCAE4;
-    --color-child11:    #B793E6;
-    --color-child12:    #F4E7D3;
-    --color-child13:    #c5f0a4;
-
     --color-bg:             #171819;
     --color-main:           #262830;
     --color-selection:      #ffecba;
