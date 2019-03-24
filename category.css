@@ -47,3 +47,7 @@
     border: 2px solid var(--color-child01);
     transition: box-shadow 500ms ease;
 }
+
+.catPreText {
+    user-select: none;
+}
