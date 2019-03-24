@@ -1,23 +1,9 @@
 /*
- * Created by jub on 23.12.2017.
+ * Created by jub on 22.03.2019.
 /*----------------------------------------------------------------
         General Styling
 ----------------------------------------------------------------*/
 html {
-    --header-nav-width:    14ch;
-    --header-button-width: 2ch;
-    --header-title-width:  12ch;
-
-    --spacing:          .25em;
-    --default-margin:   14px;
-    --default-padding:  16px;
-    --font-size-normal: 1.08em;
-    --font-size-normal: 16px;
-    --font-size-big:    2em;
-    --font-size-header: 3em;
-    --label-width:      160px;
-
-
     --color-black12:    #121212;
     --color-black1c:    #1c1c1c;
     --color-black21:    #212121;
@@ -40,16 +26,15 @@ html {
     --color-child12:    #F4E7D3;
     --color-child13:    #c5f0a4;
 
-    --color-bg1:        #232931;
-    --color-bg2:        #171819;
-    --color-main1:      #282A36;
-    --color-main2:      #484B61;
-    --color-text:       #8787A3;
-    --color-white:      #fff;
-    --color-red:        #FF5F5D;
-    --color-yellow:     #FFDE85;
-    --color-lightblue:  #98FFE1;
-    --color-blue:       #57c7ff;
+    --color-bg:             #171819;
+    --color-main:           #262830;
+    --color-selection:      #FFECBA;
+
+    --color-text-link:      #8a8ea3;
+    --color-text-content:   #F4E7D3;
+    --color-text-pre01:     #FFA06F;
+    --color-text-pre02:     #F38181;
+    --color-text-pre03:     #c5f0a4;
 
     --color-shadow1:     rgba(0,0,0,.1);
     --color-shadow25:    rgba(0,0,0,.25);
@@ -58,27 +43,22 @@ html {
     --color-shadow5:     rgba(0,0,0,.5);
     --color-shadow6:     rgba(0,0,0,.6);
     --color-shadow75:    rgba(0,0,0,.75);
-    --color-text-shadow: rgba(242,242,249,.25);
 
-    --hight-searchBox: 64px;
-    --width-label:    10ch;
-    --width-category: 40ch;
+    --hight-searchBox:  48px;
+    --width-label:      10ch;
+    --width-category:   40ch;
     --padding-category: 10px;
     --margin-category:  5px;
+    --font-size-normal: 16px;
 
-    min-height: 100%;
-    background: var(--color-bg2);
+    min-height: 100vh;
+    background: var(--color-bg);
     font-family: 'Varela Round', sans-serif;
     font-size: var(--font-size-normal);
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    height:100%;
-    background: linear-gradient(var(--color-bg1),var(--color-bg2));
-    background: var(--color-bg2);
-    background-repeat:no-repeat !important;
-    color: #bbb;
     margin: 0 0 0;
 }
 
@@ -96,7 +76,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: linear-gradient(var(--color-bg1), var(--color-bg2));
+    background: var(--color-bg);
     -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
     -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
     box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
@@ -104,7 +84,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-main1);
+    background: var(--color-main);
     background: rgba(90,92,104,.6);
     -webkit-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
     -moz-box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
@@ -120,61 +100,23 @@ body {
 ----------------------------------------------------------------*/
 header {
     position: relative;
-    color: var(--color-black33);
-    background: var(--color-main1);
-    max-width: 120ch;
-    max-width: calc(120ch + 10px);
+    color: var(--color-text-content);
+    background: var(--color-main);
+    max-width: calc(120ch + 12px + (2 * var(--padding-category)));
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    padding: var(--padding-category);
-    border: 2px solid  var(--color-shadow1);
-    box-shadow: 0 0px 20px 0px var(--color-shadow5);
+    margin: 0 auto 10px;
+    box-shadow: 0 0 20px 0 var(--color-shadow5);
     transition: box-shadow 500ms ease;
-    font-family: 'Varela Round', sans-serif;
-}
-
-header:before {
-    border: 2px solid var(--color-shadow25);
-    box-shadow: 0 0px 8px 0px var(--color-shadow35);
 }
 
 header:hover {
-    box-shadow: 0 0 25px 0px var(--color-shadow5);
+    box-shadow: 0 0 25px 0 var(--color-shadow5);
     transition: box-shadow 500ms ease;
-}
-
-
-#searchBoxPreText {
-    position: absolute;
-    display: inline;
-    /*margin: 19px 20px;
-    /*margin: calc(var(--hight-searchBox) / calc(var(--font-size-normal) / 3.5)) 20px;*/
-    padding-bottom: 0;
-}
-
-#searchInput {
-    display: inline;
-    /*background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10ch" height="30"><text x="5" y="19" style="font: bold 16px Varela Round;">~ > locate</text></svg>') no-repeat;*/
-    background: transparent;
-    color: var(--color-text);
-    outline: none;
-    border: 0;
-    box-sizing: border-box;
-    font: inherit;
-    height: var(--hight-searchBox);
-    height: auto;
-    width: 100%;
-    margin-top: 2px;
-    padding-left: 8ch;
-    font-family: 'Varela Round', sans-serif;
-
 }
 
 #content {
     position: relative;
-    color: white;
+    color: var(--color-text-content);
     background: transparent;
     max-width: calc(120ch + 32px);
     height: 400px;
@@ -186,16 +128,34 @@ header:hover {
 }
 
 /*----------------------------------------------------------------
-        Color Styling
+        Search Box
 ----------------------------------------------------------------*/
-.blue {
-    color: var(--color-blue);
+#searchBoxPreText {
+    position: absolute;
+    display: inline;
+    margin: 12px 12px;
+    padding-bottom: 0;
 }
 
-.green {
-    color: #5af78e;
+#searchInput {
+    display: inline;
+    background: transparent;
+    color: var(--color-text);
+    outline: none;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    font: inherit;
+    height: var(--hight-searchBox);
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 9ch;
+    padding-right: 1ch;
+    transition: color 500ms, border 300ms, box-shadow 500ms, border-radius 300ms;
+
 }
 
-.pink {
-    color: #ff6ac1;
+#searchInput:focus {
+    color: var(--color-text-content);
+    border: 2px solid var(--color-selection);
+    transition: color 300ms, border 300ms, box-shadow 500ms, border-radius 300ms;
 }
