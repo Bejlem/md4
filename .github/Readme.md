@@ -6,4 +6,4 @@ This is my Startpage #4
 
 Take a look at it here: https://jubit.github.io/md4/
 
-Insperation for the look: https://www.reddit.com/r/startpages/comments/5gjfpv/terminal_in_the_browser/
+Inspiration  for the look: https://www.reddit.com/r/startpages/comments/5gjfpv/terminal_in_the_browser/
