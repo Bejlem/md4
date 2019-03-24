@@ -28,7 +28,7 @@ html {
 
     --color-bg:             #171819;
     --color-main:           #262830;
-    --color-selection:      #FFECBA;
+    --color-selection:      #ffecba;
 
     --color-text-link:      #8a8ea3;
     --color-text-content:   #F4E7D3;
@@ -36,12 +36,7 @@ html {
     --color-text-pre02:     #F38181;
     --color-text-pre03:     #c5f0a4;
 
-    --color-shadow1:     rgba(0,0,0,.1);
-    --color-shadow25:    rgba(0,0,0,.25);
-    --color-shadow3:     rgba(0,0,0,.3);
-    --color-shadow35:    rgba(0,0,0,.35);
     --color-shadow5:     rgba(0,0,0,.5);
-    --color-shadow6:     rgba(0,0,0,.6);
     --color-shadow75:    rgba(0,0,0,.75);
 
     --hight-searchBox:  48px;
@@ -110,7 +105,7 @@ header {
 }
 
 header:hover {
-    box-shadow: 0 0 25px 0 var(--color-shadow5);
+    box-shadow: 0 0 25px 0 var(--color-shadow75);
     transition: box-shadow 500ms ease;
 }
 
@@ -140,7 +135,7 @@ header:hover {
 #searchInput {
     display: inline;
     background: transparent;
-    color: var(--color-text);
+    color: var(--color-text-link);
     outline: none;
     border: 2px solid transparent;
     box-sizing: border-box;
