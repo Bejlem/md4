@@ -102,6 +102,7 @@ header:hover {
     display: inline;
     margin: 12px 12px;
     padding-bottom: 0;
+    user-select: none;
 }
 
 #searchInput {
