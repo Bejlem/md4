@@ -1,5 +1,5 @@
 a {
-    color: var(--color-text-link);
+    color: var(--color-text-inactive);
     padding: 0 10px;
     text-decoration: none;
     white-space: nowrap;
