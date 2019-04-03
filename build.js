@@ -112,7 +112,9 @@ let categoryLinks = [
         ['http://qr-code-generator.com', 'qr-gen'],
         ['https://ipinfo.io/ip', 'ipinfo'],
         ['https://wikileaks.org/ciav7p1/cms/page_17760284.html', 'jap faces'],
-        ['https://textfac.es', 'textfaces']
+        ['https://textfac.es', 'textfaces'],
+        ['https://www.hiveworkshop.com/threads/beginning-jass-tutorial-series.30765/', 'jass tutorial'],
+        ['https://www.hiveworkshop.com/threads/codeless-save-and-load-multiplayer-v2-0-0.278664/', 'codeless save load']
     ]
 ];
 
