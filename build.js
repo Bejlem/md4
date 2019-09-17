@@ -88,7 +88,7 @@ let categoryLinks = [
     //school
     [
         ['https://poly.webuntis.com/WebUntis/?school=rbz-technik#/basic/main', 'timetable'],
-        ['https://moodle.rbz-technik-kiel.de/moodle/login/index.php', 'moodle'],
+        ['https://moodle.rbz-technik.de/moodle/login/index.php', 'moodle'],
         ['http://moodle.rbz-technik.de:20010/users/sign_in', 'GitLab'],
         ['https://www.rbz-technik.de/fileadmin/user_upload/Inhalte/Formulare/EntschuldigungsFormular_BS_2017_07_11F.pdf', 'Entschuldigung'],
         ['http://vlsm-calc.net', 'vlsm-calc'],
