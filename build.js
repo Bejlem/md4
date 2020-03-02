@@ -74,7 +74,7 @@ let categoryLinks = [
     ],
     //work
     [
-        ['https://wiki.bolde.de:444/wordpress/', 'bolde wiki'],
+        ['https://wiki.bolde.de/wordpress/', 'bolde wiki'],
         ['https://kaseya.bolde.de', 'kaseya'],
         ['https://kaseya.bolde.de/Dashboard/DashboardView.aspx?id=1039&mode=view', 'dashboard'],
         ['https://secure10.datev.de/an-online', 'an-o'],
