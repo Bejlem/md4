@@ -66,7 +66,7 @@ let categoryLinks = [
     ],
     //code
     [
-        ['https://github.com/jubit', 'github'],
+        ['https://github.com/bejlem', 'github'],
         ['https://codepen.io/jub/', 'codepen'],
         ['https://devdocs.io/', 'devdocs'],
         ['https://w3schools.com', 'w3schools'],
